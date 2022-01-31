@@ -1,0 +1,9 @@
+.productBox {
+    border-bottom: #000000 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.productBox img {
+    max-width: 200px;
+    display: flex;
+}

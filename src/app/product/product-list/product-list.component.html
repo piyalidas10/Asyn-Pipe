@@ -1,0 +1,5 @@
+
+    <div class="productBox" *ngFor="let prod of (productListsByCat | async)">
+        <h4>{{prod.title}}</h4>
+        <p>{{prod.description}}</p>        
+    </div>

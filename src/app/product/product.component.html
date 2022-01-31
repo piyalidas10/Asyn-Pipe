@@ -1,0 +1,20 @@
+<div class="productAll">
+    <div class="product">
+        <app-product-list [productListsByCat]="dairyProducts$"></app-product-list>
+    </div>
+    <div class="product">
+        <app-product-list [productListsByCat]="vegetableProducts$"></app-product-list>
+    </div>
+    <div class="product">
+        <app-product-list [productListsByCat]="fruitProducts$"></app-product-list>
+    </div>
+</div>
+
+<ng-container *ngIf="productCategories">
+    <div *ngFor="let info of productCategories">
+      {{ info }}
+    </div>
+</ng-container>
+
+    
+
