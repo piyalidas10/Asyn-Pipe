@@ -1,6 +1,8 @@
 # Async Pipe’s benefits over subscribe
 The Service fetch the data returns an observable. To get the observable’s value, you need to call subscribe() on the observable. And everytime you need to call subscribe() and unsubscribe() later on. You can easily forget to unsubscribe. You can achieve this suing Async pipe.
 
+![async-pipe](async-pipe.png)
+
 1. The Async Pipe calls subscribe() automatically and returns the emitted values. When the component is destroyed, it automatically calls unsubscribe(). Using subscribe() introduces a complementary need to unsubscribe at the end of the component life-cycle to avoid memory leaks and better performance. Developers have to unsubscribe manually. The most RxJS (declarative) common way to do this is to using takeUntil(unsubscribe$).
 
 Suppose you have to show multiple product category lists. I have written one service to fetch data as observable.
